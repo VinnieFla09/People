@@ -1,5 +1,6 @@
 ﻿@page
 @model People.pages.W2ws1Model
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
 @{
     Layout = null;
 }
@@ -18,7 +19,15 @@
         {     
         <li>@Model.myArray[i]</li>        
         }
-    </ul>           
+    </ul>
+    
+    <form method="post">
+        <label for="Input1">First Name:</label>
+        <input type="text" name="Input1" id="Input1" value=""/>
+        <input type="submit" value="Press Here!">
+    </form>
+
+    <h2>@Model.Message</h2>
   
 </body>
 </html>

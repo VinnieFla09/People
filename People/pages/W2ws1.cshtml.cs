@@ -17,5 +17,10 @@ namespace People.pages
             
 
         }
+
+        public void OnPost(string Input1)
+        {           
+            Message = string.Format("Hello {0}", Input1);
+        }
     }
 }
