@@ -12,13 +12,17 @@ namespace People.pages
         public string[] myArray { get; set; } = { "Ireland", "England", "France", "Wales", "Scotland", "Italy" };
 
         public string Message { get; set; }
+
+        [BindProperty]
+        public string Input1 { get; set; }
+
         public void OnGet()
         {
             
 
         }
 
-        public void OnPost(string Input1)
+        public void OnPost()
         {           
             Message = string.Format("Hello {0}", Input1);
         }
