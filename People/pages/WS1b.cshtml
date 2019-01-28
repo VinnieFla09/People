@@ -1,0 +1,36 @@
+﻿@page
+@model People.pages.WS1bModel
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@{
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>W21b</title>
+</head>
+
+<body>
+    <form method="post">
+        <label for="Number1">Enter the 1st number</label>
+        <input type="number" name="Number1" id="Number1" value="" />
+        <br /> <br />
+
+        <label for="Number2">Enter the 2nd number</label>
+        <input type="number" name="Number2" id="Number2" value="" />
+        <br /> <br />
+
+        <label for="Number3">Enter the 3rd number</label>
+        <input type="number" name="Number3" id="Number3" value="" />
+        <br /> <br />
+
+        <input type="submit" value="Press Here!">
+        <br /><br />
+
+              <h2>@Model.Message</h2>
+
+    </form>
+</body>
+</html>
