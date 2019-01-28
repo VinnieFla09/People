@@ -1,0 +1,24 @@
+﻿@page
+@model People.pages.W2ws1Model
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>W2ws1</title>
+</head>
+<body>
+    <h1> This is a razor page for wk2 worksheet</h1>
+    <ul>
+        @for (int i=0; i < 6; i++)
+        {     
+        <li>@Model.myArray[i]</li>        
+        }
+    </ul>           
+  
+</body>
+</html>
