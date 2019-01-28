@@ -24,6 +24,7 @@ namespace People
             {
                 app.UseDeveloperExceptionPage();
             }
+            app.UseStaticFiles();
 
             app.Run(async (context) =>
             {
