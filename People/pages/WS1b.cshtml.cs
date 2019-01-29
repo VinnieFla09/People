@@ -16,6 +16,9 @@ namespace People.pages
         [BindProperty]
         public int Number3 { get; set; }
 
+        [BindProperty]
+        public string Button { get; set; }
+
         public string Message { get; set; }
 
         public void OnGet()
@@ -24,7 +27,31 @@ namespace People.pages
 
         public void OnPost()
         {
-            Message = string.Format("Your numbers entered were {0}, {1} and {2} Total = {3}", Number1, Number2, Number3, Number1+Number2+Number3);
+            if (Button == "Add")
+            {
+                Message = string.Format("Your numbers entered were {0}, {1} and {2}  and function is add. Total = {3}", Number1, Number2, Number3, Number1 + Number2 + Number3);
+            }
+
+            else if (Button == "Subtract")
+            {
+                Message = string.Format("Your numbers entered were {0}, {1} and {2} and function is subtract. Total = {3}", Number1, Number2, Number3, Number1 - Number2 - Number3);
+            }
+
+            else if (Button == "Multiply")
+
+            {
+                Message = string.Format("Your numbers entered were {0}, {1} and {2}  and function is multiply.  Total = {3}", Number1, Number2, Number3, Number1 * Number2 * Number3);
+            }
+
+            else if (Button == "Divide")
+
+            {
+                Message = string.Format("Your numbers entered were {0}, {1} and {2} and function is divide. Total = {3}", Number1, Number2, Number3, Number1 / Number2 / Number3);
+            }
+
+            else
+                Message = string.Format("Your numbers entered were {0}, {1} and {2}. No function selected to perform", Number1, Number2, Number3, Number1 / Number2 / Number3);
+
         }
     }
 }
