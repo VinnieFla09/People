@@ -47,7 +47,11 @@ namespace People.pages
 
         [BindProperty]
         public string Season { get; set; }
-        
+
+        [BindProperty]
+        public string Button { get; set; }
+
+        public string Message { get; set; }
 
 
 
@@ -56,7 +60,33 @@ namespace People.pages
 
         public void OnGet()
         {
+           
+        }
 
+        public void OnPost()
+        {
+            if (Button == "Spring")
+            {
+                Message = "It is spring!";
+            }
+
+            else if (Button == "Summer")
+            {
+                Message = "It is summer!";
+            }
+
+            else if (Button == "Autumn")
+            {
+                Message = "It is autumn!";
+            }
+
+            else if (Button == "Winter")
+            {
+                Message = "It is winter!";
+            }
+
+            else
+                Message = "Unknown input";
         }
     }
 }
