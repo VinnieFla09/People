@@ -12,6 +12,48 @@ namespace People.pages
         [BindProperty]
         public int Number1 { get; set; }
 
+        [BindProperty]
+        public int? Number2 { get; set; }
+
+        [BindProperty]
+        public double DoubleNumber { get; set; }
+
+        [BindProperty]
+        public double? DoubleNull { get; set; }
+
+        [BindProperty]
+        public decimal DecimalNumber { get; set; }
+
+        [BindProperty]
+        public decimal? DecimalNull { get; set; }
+
+        [BindProperty]
+        public float? FloatNull { get; set; }
+
+        [BindProperty]
+        public float FloatNumber { get; set; }
+
+        [BindProperty]
+        public string Stringprop { get; set; }
+
+        [BindProperty]
+        public DateTime DateAndTime { get; set; }
+
+        [BindProperty]
+        public DateTime? DateAndTimeNull { get; set; }
+
+        [BindProperty]
+        public bool IsContactAllowed { get; set; }
+
+        [BindProperty]
+        public string Season { get; set; }
+        
+
+
+
+
+
+
         public void OnGet()
         {
 

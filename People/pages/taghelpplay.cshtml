@@ -14,9 +14,76 @@
 </head>
 <body>
 
-    <form>
-        <label asp-for="Number1"></label>
+    <form method="post">
+        <label asp-for="Number1">Enter your first number</label>
         <input asp-for="Number1" />
+        <br />
+        <br />
+        <label asp-for="Number2">Enter your second number</label>
+        <input asp-for="Number2" />
+        <br />
+        <br />
+        <label asp-for="DoubleNumber">Enter your double number</label>
+        <input asp-for="DoubleNumber" />
+        <br />
+        <br />
+        <label asp-for="DoubleNull">Enter your nullable double number</label>
+        <input asp-for="DoubleNull" />
+        <br />
+        <br />
+        <label asp-for="DecimalNumber">Enter your decimal number</label>
+        <input asp-for="DecimalNumber" />
+        <br />
+        <br />
+        <label asp-for="DecimalNull">Enter your nullable decimal number</label>
+        <input asp-for="DecimalNull" />
+        <br />
+        <br />
+        <label asp-for="FloatNumber">Enter your float number</label>
+        <input asp-for="FloatNumber" />
+        <br />
+        <br />
+        <label asp-for="FloatNull">Enter your nullable float number</label>
+        <input asp-for="FloatNull" />
+        <br />
+        <br />
+        <label asp-for="Stringprop">Enter your string here</label>
+        <input asp-for="Stringprop" />
+        <br />
+        <br />
+        <label asp-for="DateAndTime">Enter your date and time here</label>
+        <input asp-for="DateAndTime" />
+        <br />
+        <br />
+        <label asp-for="DateAndTimeNull">Enter your nullable date here</label>
+        <input asp-for="DateAndTimeNull" />
+        <br />
+        <br />
+        <label asp-for="IsContactAllowed">Is contact allowed??</label>
+        <input asp-for="IsContactAllowed" />
+        <br />
+        <br />
+        <label for="Winter">
+            <input type="radio" name="Button" value="Winter" id="Winter" asp-for=Season> Winter
+        </label>
+        <br /><br />
+        <label for="Summer">
+            <input type="radio" name="Button" value="Summer" id="Summer" asp-for=Season> Summer
+        </label>
+        <br /><br />
+        <label for="Autumn">
+            <input type="radio" name="Button" value="Autumn" id="Autumn" asp-for=Season> Autumn
+        </label>
+        <br /><br />
+        <label for="Spring">
+            <input type="radio" name="Button" value="Spring" id="Spring" asp-for=Season> Spring
+        </label>
+        <br /><br />
+
+
+        <br />
+        <br />
+        <input type="submit" value="Press Here!">
 
     </form>
 </body>
