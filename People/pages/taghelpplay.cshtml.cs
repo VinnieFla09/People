@@ -65,22 +65,22 @@ namespace People.pages
 
         public void OnPost()
         {
-            if (Button == "Spring")
+            if (Season == "Spring")
             {
                 Message = "It is spring!";
             }
 
-            else if (Button == "Summer")
+            else if (Season == "Summer")
             {
                 Message = "It is summer!";
             }
 
-            else if (Button == "Autumn")
+            else if (Season == "Autumn")
             {
                 Message = "It is autumn!";
             }
 
-            else if (Button == "Winter")
+            else if (Season == "Winter")
             {
                 Message = "It is winter!";
             }
