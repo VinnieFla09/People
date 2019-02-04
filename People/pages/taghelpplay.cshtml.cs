@@ -60,7 +60,7 @@ namespace People.pages
 
         public void OnGet()
         {
-           
+
         }
 
         public void OnPost()
