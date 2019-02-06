@@ -24,6 +24,12 @@
             }
 
         </fieldset>
+
+        <select asp-for=ChosenMonths asp-items=@Model.MonthList></select>
+
+
+
+
         <button type="submit">Press here to see what happens</button>
 
 
@@ -40,10 +46,17 @@
                 }
             }
         }
-
-
-
     </ul>
+
+    <ol>
+        @if (@Model.Posted == true)
+        {
+            @foreach (string month in Model.ChosenMonths)
+            {
+                <li>@month</li>
+            }
+        }
+    </ol>
 
 </body>
 </html>
