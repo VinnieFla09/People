@@ -1,0 +1,49 @@
+﻿@page
+@model People.pages.TimeModel
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Time</title>
+</head>
+<body>
+    <form method="post">
+        <fieldset>
+            <legend>Pick your favorite days of the week.</legend>
+
+            @for (int i = 0; i < Model.DaysOfWeek.Length; i++)
+            {
+                <input type="checkbox" asp-for=DaysSelected[i] />
+                <label asp-for=DaysSelected[i]>@Model.DaysOfWeek[i]</label>
+            }
+
+        </fieldset>
+        <button type="submit">Press here to see what happens</button>
+
+
+    </form>
+
+    <ul>
+        @if (@Model.Posted == true)
+        {
+            @for (int i = 0; i < @Model.DaysSelected.Length; i++)
+            {
+                if (@Model.DaysSelected[i] == true)
+                {
+                    <li>@Model.DaysOfWeek[i]</li>
+                }
+            }
+        }
+
+
+
+    </ul>
+
+</body>
+</html>
